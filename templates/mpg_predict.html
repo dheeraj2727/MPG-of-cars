@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPG of your CAR </title>
+</head>
+
+<body style="background-color: rgb(99, 117, 104);">
+    <img src="Gradient_Descent_Img.png" alt="Trulli" width="500" height="333">
+
+    <h1> MPG of your CAR </h1>
+    <form method="GET" action="/predict_mpg">
+
+        <label>Cylinders:</label>
+        <input type = "text" name = "Cylinders">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Displacement:</label>
+        <input type = "text" name = "Displacement">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Horsepower:</label>
+        <input type = "text" name = "Horsepower">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Weight:</label>
+        <input type = "text" name = "Weight">
+        </select>
+       
+        <br>
+        <br>
+
+        <label>Acceleration:</label>
+        <input type = "text" name = "Acceleration">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Model_Year:</label>
+        <input type = "text" name = "Model_Year">
+        </select>
+
+        <br>
+        <br>
+
+
+        <label>Origin:</label>
+        <select name = "Origin">
+            <option value = "Germany">Germany</option>
+            <option value = "Japan">Japan</option>
+            <option value = "USA">USA</option>
+        </select>
+
+        <br>
+        <br>
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <h4><strong>MPG of your CAR is <b> {{ prediction }} /- Rs.</b> Only </strong></h4>
+
+
+    </form>
+
+
+</body>
+</html>
+
